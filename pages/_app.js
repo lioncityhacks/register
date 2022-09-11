@@ -42,7 +42,7 @@ export default class App extends NextApp {
               zIndex: 1,
               height: '100vh',
               width: '100vw',
-              backgroundImage: 'linear-gradient(144deg, rgba(23,23,29,0.7) 0%, rgba(23,23,29,0.9) 100%), linear-gradient(144deg, rgba(236,55,80,0.5) 0%, rgba(255,140,55,0.5) 100%), url("https://cloud-5i6wo8xw4-hack-club-bot.vercel.app/0compressed-reg-bg.jpg")',
+              backgroundImage: 'linear-gradient(144deg, rgba(23,23,29,0.7) 0%, rgba(23,23,29,0.9) 100%), linear-gradient(144deg, rgba(236,55,80,0.5) 0%, rgba(255,140,55,0.5) 100%), url("https://cloud-fn342sml8-hack-club-bot.vercel.app/0screenshot_2022-08-30_at_11.42.24_pm.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom-left',
               overflowY: 'scroll'
