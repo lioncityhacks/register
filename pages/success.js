@@ -43,7 +43,7 @@ export default function Register({ notFound, registrationRecord, params }) {
           >
             Hack Club Slack
           </Text>{' '}
-          if you'd like to meet other hackers.
+          to meet other hackers.
         </Text>
       </Card>
     </Container>
