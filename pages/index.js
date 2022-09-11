@@ -38,7 +38,8 @@ export default function Register({ notFound, registrationRecord, params }) {
       <ToastContainer align="right" />
       <Card
         px={[4, 4]}
-        py={[3, 3]}
+        pb={[3, 3]}
+        pt="22px"
         sx={{
           color: 'blue',
           textAlign: 'left'
