@@ -28,12 +28,12 @@ export default function Register({ notFound, registrationRecord, params }) {
           textAlign: 'left'
         }}
       >
-        <Text sx={{ color: 'red', fontSize: '27px', fontWeight: 800 }}>
+        <Text sx={{ color: 'red', fontSize: '27px', fontWeight: 800, mb: 2 }}>
           Thank you for signing up!
         </Text>
         <br />
         <Text>
-          ❤️ You're on the waitlist! We really hope we can meet you! Make sure you check your email in
+          ❤️ We can't wait to meet you! Make sure you check your email in
           the coming days and weeks for important updates. Also, check out the{' '}
           <Text
             as={'a'}
