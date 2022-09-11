@@ -34,14 +34,14 @@ export default function Register({ notFound, registrationRecord, params }) {
         <br />
         <Text>
           ❤️ We can't wait to meet you! Make sure you check your email in
-          the coming days and weeks for important updates. Also, check out the{' '}
+          the coming days and weeks for important updates. Also, check out our{' '}
           <Text
             as={'a'}
-            href="https://hackclub.com/slack"
+            href="https://discord.gg/ZC6JtMHEXC"
             target="_blank"
-            sx={{ color: 'red' }}
+            sx={{ color: 'purple' }}
           >
-            Hack Club Slack
+            Discord Server
           </Text>{' '}
           to meet other hackers.
         </Text>
