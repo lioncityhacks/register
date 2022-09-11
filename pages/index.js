@@ -55,8 +55,7 @@ export default function Register({ notFound, registrationRecord, params }) {
                 flexGrow: 1,
                 ml: 2,
                 textAlign: 'center',
-                fontSize: 4,
-                textDecoration: 'underline'
+                fontSize: 4
               }}
               as="div"
             >
