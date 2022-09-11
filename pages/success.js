@@ -34,7 +34,7 @@ export default function Register({ notFound, registrationRecord, params }) {
         <br />
         <Text>
           ❤️ We can't wait to meet you! Make sure you check your email in
-          the coming weeks for important updates. Feel free to join our{' '}
+          the coming weeks for important updates. In the meantime, join our{' '}
           <Text
             as={'a'}
             href="https://discord.gg/ZC6JtMHEXC"
