@@ -1,11 +1,9 @@
 import * as React from 'react'
 import NextApp from 'next/app'
 import '../styles/app.css'
-import '@hackclub/theme/fonts/reg-bold.css'
 import theme from '../lib/theme'
 import { ThemeProvider } from 'theme-ui'
 import ForceTheme from '../components/force-theme'
-import Flag from '../components/flag'
 import NProgress from '../components/nprogress'
 import Meta from '../components/meta'
 import Head from 'next/head'
@@ -53,8 +51,7 @@ export default class App extends NextApp {
         </div>
         <style>
           {`
-          @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
+         
           * {
             box-sizing: border-box;
           }
