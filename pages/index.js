@@ -92,26 +92,28 @@ export default function Register({ notFound, registrationRecord, params }) {
           around the world, <a href="https://hackathons.hackclub.com" style={{color: 'white'}}>join them here</a>.
         </Box>
         <Box bg="sunken" p={3} mb={3} sx={{ borderRadius: 3 }}>
-          This summer, we’re going to return in-person high-school hackathons to
-          San Francisco. Our goal is to kick off a new renaissance.
+          Dear hacker,
           <br />
           <br />
-          We invite you to come out and join us. Not through Zoom or Discord,
-          but IRL out in the Bay Area from August 5th 6:00pm to August 7th
-          12:00pm. We’ll be hosted at the fantastic Figma HQ on Market Street in
-          the heart of San Francisco.
+          We're inviting you to Lion City Hacks, a hackathon for teenagers in Singapore, on December 3rd. Join us for twelve hours of hacking, workshops & friendship.
           <br />
           <br />
-          Over the weekend, you’ll explore the Bay Area during your free time,
-          hack with co-conspirators and experience
-          the energy of being in-person again. Together, we’ll Assemble to form
-          the first IRL high school hackathon on this side of the pandemic.
+          📅 Date & Time: Starts at 9:00am and ends at 9:00pm on December 3rd.
           <br />
           <br />
-          We're so excited to meet you at Assemble this summer. Please fill out
+          📍 Venue: to be confirmed, watch this space!
+          <br />
+          <br />
+          👋 Eligibility: all secondary, pre-university and JC students are welcome to join (no experience required!).
+          <br />
+          <br />
+          🦠 COVID-19: We require all participants to be vaccinated against COVID-19 or to have a medical exemption. We will be providing participants with N95 masks.
+          <br />
+          <br />
+          We're so excited to meet you at Lion City Hacks this December. Please fill out
           the registration form below to help us make the event magical for you.
           Feel free to contact{' '}
-          <a href="mailto:assemble@hackclub.com">assemble@hackclub.com</a> for
+          <a href="mailto:contact@innovationcircuit.com">contact@innovationcircuit.com</a> for
           help!
         </Box>
         {manifest.questions.map((sectionItem, sectionIndex) => {
