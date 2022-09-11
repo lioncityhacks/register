@@ -276,10 +276,6 @@ export default function Register({ notFound, registrationRecord, params }) {
                 }
               )
           }}
-          style={{
-            filter: true ? 'grayscale(1)' : 'grayscale(0)',
-          }}
-          disabled={true}
         >
           Submit
         </Button>
