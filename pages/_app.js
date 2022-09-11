@@ -23,7 +23,6 @@ export default class App extends NextApp {
           image="https://cloud-1pe4a62r6-hack-club-bot.vercel.app/0compressed-bg.jpg" // large summary card image URL
           color="#ec3750" // theme color
         />
-        <Flag />
         <NProgress color={'#ec3750'} />
         <ForceTheme theme="light" />
         <div
