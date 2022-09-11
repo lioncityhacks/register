@@ -24,7 +24,7 @@ import { toast, ToastContainer } from 'react-nextjs-toast'
 
 export default function Register({ notFound, registrationRecord, params }) {
   const [data, setData] = useState({})
-  const [disabled, setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(false)
 
   let keys = manifest.questions.flatMap(x => x.items.map(y => y.key))
 
@@ -39,9 +39,9 @@ export default function Register({ notFound, registrationRecord, params }) {
       <Card
         px={[4, 4]}
         pb={[3, 3]}
-        pt={["20px", "20px"]}
+        pt={['22px', '22px']}
         sx={{
-          color: 'blue',
+          color: 'orange',
           textAlign: 'left'
         }}
       >
@@ -56,23 +56,26 @@ export default function Register({ notFound, registrationRecord, params }) {
                 ml: 2,
                 textAlign: 'center',
                 fontSize: 4,
-                textDecoration: 'underline',
-                color: 'orange'
+                textDecoration: 'underline'
               }}
               as="div"
             >
-              Register for{' '}
-              <Text
-                sx={{
-                  textDecoration: 'none',
-                  color: 'orange',
-                  cursor: 'pointer'
-                }}
-                onClick={() => window.open('https://hack.innovationcircuit.com')}
-              >
-                🦁 Lion City Hacks
+              🦁
+              <Text sx={{ textDecoration: 'underline' }}>
+                Register for{' '}
+                <Text
+                  sx={{
+                    color: 'orange',
+                    cursor: 'pointer'
+                  }}
+                  onClick={() =>
+                    window.open('https://hack.innovationcircuit.com')
+                  }
+                >
+                  Lion City Hacks
+                </Text>
+                !
               </Text>
-              !
             </Text>
           </Flex>
           <Box
@@ -92,7 +95,9 @@ export default function Register({ notFound, registrationRecord, params }) {
           Dear hacker,
           <br />
           <br />
-          We're inviting you to Lion City Hacks, a hackathon for teenagers in Singapore, on December 3rd. Join us for twelve hours of hacking, workshops & friendship.
+          We're inviting you to Lion City Hacks, a hackathon for teenagers in
+          Singapore, on December 3rd. Join us for twelve hours of hacking,
+          workshops & friendship.
           <br />
           <br />
           📅 Date & Time: Starts at 9:00am and ends at 9:00pm on December 3rd.
@@ -101,17 +106,22 @@ export default function Register({ notFound, registrationRecord, params }) {
           📍 Venue: to be confirmed, watch this space!
           <br />
           <br />
-          👋 Eligibility: all secondary, pre-university and JC students are welcome to join (no experience required!).
+          👋 Eligibility: all secondary, pre-university and JC students are
+          welcome to join (no experience required!).
           <br />
           <br />
-          🦠 COVID-19: We require all participants to be vaccinated against COVID-19 or to have a medical exemption. We will be providing participants with N95 masks.
+          🦠 COVID-19: We require all participants to be vaccinated against
+          COVID-19 or to have a medical exemption. We will be providing
+          participants with N95 masks.
           <br />
           <br />
-          We're so excited to meet you at Lion City Hacks this December. Please fill out
-          the registration form below to help us make the event magical for you.
-          Feel free to contact{' '}
-          <a href="mailto:contact@innovationcircuit.com">contact@innovationcircuit.com</a> for
-          help!
+          We're so excited to meet you at Lion City Hacks this December. Please
+          fill out the registration form below to help us make the event magical
+          for you. Feel free to contact{' '}
+          <a href="mailto:contact@innovationcircuit.com">
+            contact@innovationcircuit.com
+          </a>{' '}
+          for help!
         </Box>
         {manifest.questions.map((sectionItem, sectionIndex) => {
           if (typeof sectionItem.check != 'undefined') {
@@ -122,7 +132,10 @@ export default function Register({ notFound, registrationRecord, params }) {
           return (
             <Box
               key={sectionIndex}
-              sx={{ mb: sectionIndex == manifest.questions.length -1 ? 4 : 5, mt: sectionIndex == 0 ? 4 : 5 }}
+              sx={{
+                mb: sectionIndex == manifest.questions.length - 1 ? 4 : 5,
+                mt: sectionIndex == 0 ? 4 : 5
+              }}
             >
               <Box sx={{ textAlign: 'left', mb: 2 }}>
                 <Text sx={{ color: 'red', fontSize: '27px', fontWeight: 800 }}>
@@ -259,8 +272,11 @@ export default function Register({ notFound, registrationRecord, params }) {
         })}
         <Button
           onClick={() => {
-            setDisabled(true);
-            toast.notify('Submitting your registration...', { duration: 60, title: 'Working...' })
+            setDisabled(true)
+            toast.notify('Submitting your registration...', {
+              duration: 60,
+              title: 'Working...'
+            })
             console.log(data)
             fetch('/api/submit', {
               method: 'POST',
@@ -270,17 +286,21 @@ export default function Register({ notFound, registrationRecord, params }) {
               body: JSON.stringify(data)
             })
               .then(response => response.json())
-              .then(
-                ({ success, error }) => {
-                  setDisabled(false);
-                  success ? window.location.replace('/success') : toast.notify(error, { type: 'error', title: 'Oops!', duration: 60 })
-                }
-              )
+              .then(({ success, error }) => {
+                setDisabled(false)
+                success
+                  ? window.location.replace('/success')
+                  : toast.notify(error, {
+                      type: 'error',
+                      title: 'Oops!',
+                      duration: 60
+                    })
+              })
           }}
           style={{
-             filter: disabled ? 'grayscale(1)' : 'grayscale(0)',
-           }}
-           disabled={disabled}
+            filter: disabled ? 'grayscale(1)' : 'grayscale(0)'
+          }}
+          disabled={disabled}
         >
           Submit
         </Button>
