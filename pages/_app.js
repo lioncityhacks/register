@@ -17,10 +17,10 @@ export default class App extends NextApp {
       <ThemeProvider theme={theme}>
         <Meta
           as={Head}
-          name="Join Us At Assemble!" // site name
-          title="Join Us At Assemble!" // page title
+          name="Register for Lion City Hacks!" // site name
+          title="Register for Lion City Hacks!" // page title
           description="" // page description
-          image="https://cloud-bs04w09ot-hack-club-bot.vercel.app/0image.png" // large summary card image URL
+          image="https://cloud-1pe4a62r6-hack-club-bot.vercel.app/0compressed-bg.jpg" // large summary card image URL
           color="#ec3750" // theme color
         />
         <Flag />
@@ -43,7 +43,7 @@ export default class App extends NextApp {
               zIndex: 1,
               height: '100vh',
               width: '100vw',
-              backgroundImage: 'url("/msw-bg.png")',
+              backgroundImage: 'linear-gradient(144deg, rgba(23,23,29,0.7) 0%, rgba(23,23,29,0.9) 100%), linear-gradient(144deg, rgba(236,55,80,0.1) 0%, rgba(255,140,55,0.1) 100%), url("https://cloud-1pe4a62r6-hack-club-bot.vercel.app/0compressed-bg.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'bottom-left',
               overflowY: 'scroll'
