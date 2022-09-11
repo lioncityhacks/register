@@ -59,16 +59,16 @@ export default function Register({ notFound, registrationRecord, params }) {
               }}
               as="div"
             >
-              Join The Waitlist For{' '}
+              Register for{' '}
               <Text
                 sx={{
                   textDecoration: 'none',
                   color: 'blue',
                   cursor: 'pointer'
                 }}
-                onClick={() => window.open('https://assemble.hackclub.com')}
+                onClick={() => window.open('https://hack.innovationcircuit.com')}
               >
-                Assemble
+                Lion City Hacks
               </Text>
               !
             </Text>
@@ -86,11 +86,6 @@ export default function Register({ notFound, registrationRecord, params }) {
         </Box>
       </Card>
       <Card px={[4, 4]} py={[4, 4]} mt={4}>
-        <Box bg="red" p={3} mb={3} sx={{ borderRadius: 3, color: 'white' }}>
-          👋 Hey there! Thanks for checking out Assemble. The weekend of August 5th
-          2022 was magical. Its spirit now lives on in high school hackathons 
-          around the world, <a href="https://hackathons.hackclub.com" style={{color: 'white'}}>join them here</a>.
-        </Box>
         <Box bg="sunken" p={3} mb={3} sx={{ borderRadius: 3 }}>
           Dear hacker,
           <br />
