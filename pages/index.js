@@ -39,7 +39,7 @@ export default function Register({ notFound, registrationRecord, params }) {
       <Card
         px={[4, 4]}
         pb={[3, 3]}
-        pt="20px"
+        pt={["20px", "20px"]}
         sx={{
           color: 'blue',
           textAlign: 'left'
@@ -56,7 +56,8 @@ export default function Register({ notFound, registrationRecord, params }) {
                 ml: 2,
                 textAlign: 'center',
                 fontSize: 4,
-                textDecoration: 'underline'
+                textDecoration: 'underline',
+                color: 'orange'
               }}
               as="div"
             >
@@ -64,7 +65,7 @@ export default function Register({ notFound, registrationRecord, params }) {
               <Text
                 sx={{
                   textDecoration: 'none',
-                  color: 'blue',
+                  color: 'orange',
                   cursor: 'pointer'
                 }}
                 onClick={() => window.open('https://hack.innovationcircuit.com')}
