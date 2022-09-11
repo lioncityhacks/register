@@ -39,7 +39,7 @@ export default function Register({ notFound, registrationRecord, params }) {
       <Card
         px={[4, 4]}
         pb={[3, 3]}
-        pt="22px"
+        pt="20px"
         sx={{
           color: 'blue',
           textAlign: 'left'
@@ -69,7 +69,7 @@ export default function Register({ notFound, registrationRecord, params }) {
                 }}
                 onClick={() => window.open('https://hack.innovationcircuit.com')}
               >
-                Lion City Hacks
+                🦁 Lion City Hacks
               </Text>
               !
             </Text>
