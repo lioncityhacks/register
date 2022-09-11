@@ -22,7 +22,7 @@ export default function Register({ notFound, registrationRecord, params }) {
     <Container py={4} variant="copy">
       <Card
         px={[4, 4]}
-        py={[3, 3]}
+        py={[4, 4]}
         sx={{
           color: 'blue',
           textAlign: 'left'
