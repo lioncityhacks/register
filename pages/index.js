@@ -102,7 +102,7 @@ export default function Register({ notFound, registrationRecord, params }) {
           📅 Date & Time: Starts at 9:00am and ends at 9:00pm on December 3rd.
           <br />
           <br />
-          📍 Venue: 
+          📍 Venue: {' '}
           <Link
             sx={{ textDecoration: 'underline', color: 'red' }}
             target="_blank"
