@@ -102,7 +102,14 @@ export default function Register({ notFound, registrationRecord, params }) {
           📅 Date & Time: Starts at 9:00am and ends at 9:00pm on December 3rd.
           <br />
           <br />
-          📍 Venue: to be confirmed, watch this space!
+          📍 Venue: 
+          <Link
+            sx={{ textDecoration: 'underline', color: 'red' }}
+            target="_blank"
+            href="https://www.google.com/maps/place/Red+Hat+Asia+Pacific+Pte+Ltd/@1.2841018,103.8477742,17z/data=!3m1!4b1!4m5!3m4!1s0x31da191377716ae1:0x166080ad6b7de256!8m2!3d1.2841018!4d103.8499629"
+          >
+            RedHat Singapore
+          </Link>
           <br />
           <br />
           👋 Eligibility: all secondary, pre-university and JC students are
@@ -117,8 +124,8 @@ export default function Register({ notFound, registrationRecord, params }) {
           We're so excited to meet you at Lion City Hacks this December. Please
           fill out the registration form below to help us make the event magical
           for you. Feel free to contact{' '}
-          <a href="mailto:contact@innovationcircuit.com">
-            contact@innovationcircuit.com
+          <a href="mailto:contact@lioncityhacks.com">
+            contact@lioncityhacks.com
           </a>{' '}
           for help!
         </Box>
