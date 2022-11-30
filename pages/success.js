@@ -33,8 +33,8 @@ export default function Register({ notFound, registrationRecord, params }) {
         </Text>
         <br />
         <Text>
-          ❤️ We can't wait to meet you! Make sure you check your email in
-          the coming weeks for important updates. In the meantime, join our{' '}
+          ❤️ You're on the waitlist! We really hope we can meet you! Make sure you check your email in
+          the coming days for important updates. In the meantime, join our{' '}
           <Text
             as={'a'}
             href="https://discord.gg/ZC6JtMHEXC"
